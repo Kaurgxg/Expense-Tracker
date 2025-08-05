@@ -491,8 +491,68 @@ align-self: flex-end;
 .budget-section button:hover {
   background: #e2d8fd;
 }
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
 
-    @media (max-width: 992px) { .container { transform: scale(0.9); } }
-    @media (max-width: 768px) { .container { transform: scale(0.75); } }
-    @media (max-width: 576px) { .container { transform: scale(0.6); } }
-    @media (max-width: 400px) { .container { transform: scale(0.5); } }
+  .left-bar {
+    width: 100%;
+    border-bottom: 2px solid #CEBBFF;
+    text-align: center;
+  }
+
+  .left-bar h1 {
+    font-size: 32px;
+    margin-left: 0;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+
+  .box1 {
+    height: auto;
+    padding: 20px;
+  }
+
+  .section {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .budget-top,
+  .budget-bottom {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .budget-summary div {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .budget-summary div span {
+    font-size: 18px;
+  }
+
+  .budget-chart {
+    width: 100%;
+  }
+
+  .budget-table-box tbody {
+    max-height: 200px;
+  }
+
+  .content-sections {
+    overflow-y: auto;
+    max-height: 450px;
+  }
+
+  .stats-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
